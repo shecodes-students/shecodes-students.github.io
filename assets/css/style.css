@@ -144,7 +144,7 @@ a:focus {
 #home {
   padding: 0;
   color: #fff;
-  background-image: url(../img/cover/home.jpg);
+  background-image: url(../img/cover/header.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -344,12 +344,10 @@ a:focus {
 #footer .social { margin-bottom: 20px }
 #footer .social li .facebook:hover,
 #footer .social li .facebook:focus { color: #3b5998 }
-#footer .social li .twitter:hover,
-#footer .social li .twitter:focus { color: #00aced }
-#footer .social li .google-plus:hover,
-#footer .social li .google-plus:focus { color: #d34836 }
-#footer .social li .dribbble:hover,
-#footer .social li .dribbble:focus { color: #ea4c89 }
+#footer .social li .github:hover,
+#footer .social li .github:focus { color: #ea4c89  }
+#footer .social li .gittip:hover,
+#footer .social li .gittip:focus { color: #00aced }
 #footer .copyright { margin-bottom: 0 }
 /* Responsive style */
 @media screen and (max-width: 1024px) { 
