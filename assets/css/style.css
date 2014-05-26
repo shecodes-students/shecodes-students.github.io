@@ -19,7 +19,6 @@ h5,
 h6 { font-weight: 300 }
 *,
 *:focus { outline: none !important }
-a { color: #2d2d2d }
 a:hover,
 a:focus {
   color: #0c86b6;
