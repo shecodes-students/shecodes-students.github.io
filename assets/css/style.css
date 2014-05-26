@@ -287,7 +287,19 @@ li {
 #footer a:focus { color: #fff }
 #footer .copyright { 
   margin-bottom: 0;
-  font-size: 0.8em; 
+  font-size: 0.7em; 
+  color: gray;
+}
+#footer .copyright a,
+#footer .copyright a:hover,
+#footer .copyright a:focus {
+  color: gray;
+  text-decoration: underline;
+}
+#footer .copyright .self-ref,
+#footer .copyright .self-ref a {
+  color: #fff;
+  font-size: 1.05em;
 }
 /* Responsive style */
 @media screen and (max-width: 1024px) { 
