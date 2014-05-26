@@ -385,6 +385,11 @@ a:focus {
   #faq .quote { padding: 0 30px }
 }
 /* Overriding Bootstrap.min.css*/ 
+.panel-heading {
+  text-align: left;
+  width: 70%;
+  margin: 1.5% 15%;
+}
 .panel-body {
   width: 60%;
   margin: 3% 20%;
