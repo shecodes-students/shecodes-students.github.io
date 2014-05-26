@@ -322,7 +322,10 @@ li {
   margin: 3% 14%;
 }
 /* Mail Chimp*/
-#mc_embed_signup input.email {
+#mc_embed_signup input.email,
+#mc_embed_signup input.email:hover,
+#mc_embed_signup input.email:focus {
+  color: black;
   display:  inline-block;
   padding: 6px 0;
   margin: 0 3% 2% 0;
@@ -334,6 +337,7 @@ li {
   border-radius: 5px;
 }
 #mc_embed_signup #mce-NAME {
+  color: black;
   display:  inline-block;
   padding: 6px 0;
   margin: 0 3% 2% 0;
