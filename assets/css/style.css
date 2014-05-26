@@ -275,6 +275,14 @@ li {
 #contact .heading .border { background-color: #fff }
 #contact a { display: block }
 #contact i { margin: 60px 0 15px }
+#contact .email:hover,
+#contact .email:focus { color: #85E584 }
+#contact .facebook:hover,
+#contact .facebook:focus { color: #3b5998 }
+#contact .github:hover,
+#contact .github:focus { color: #ea4c89  }
+#contact .gittip:hover,
+#contact .gittip:focus { color: #A24EDE }
 #footer {
   padding: 40px 0;
   color: #ccc;
@@ -284,13 +292,6 @@ li {
 #footer a,
 #footer a:hover,
 #footer a:focus { color: #fff }
-#footer .social { margin-bottom: 20px }
-#footer .social li .facebook:hover,
-#footer .social li .facebook:focus { color: #3b5998 }
-#footer .social li .github:hover,
-#footer .social li .github:focus { color: #ea4c89  }
-#footer .social li .gittip:hover,
-#footer .social li .gittip:focus { color: #00aced }
 #footer .copyright { margin-bottom: 0 }
 /* Responsive style */
 @media screen and (max-width: 1024px) { 
