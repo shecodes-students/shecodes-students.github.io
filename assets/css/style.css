@@ -142,9 +142,6 @@ li {
   background-color: #71be3c;
 }
 .page .heading p { margin: 20px auto 0 }
-.carousel-inner {
-  text-align: left;
-}
 #home {
   padding: 0;
   color: #fff;
@@ -315,7 +312,8 @@ li {
   #faq .quote { padding: 0 30px }
 }
 /* Overriding Bootstrap.min.css*/ 
-.panel-heading {
+.panel-heading,
+.carousel-inner {
   text-align: left;
   width: 80%;
   margin: 1.5% 10%;
