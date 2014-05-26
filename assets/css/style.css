@@ -197,31 +197,6 @@ a:focus {
   color: #444;
   text-align: left;
 }
-#faq .carousel-indicators li {
-  width: 9px;
-  height: 9px;
-  border-color: #a6a6a6;
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-transition: all 0.25s linear;
-     -moz-transition: all 0.25s linear;
-       -o-transition: all 0.25s linear;
-          transition: all 0.25s linear;
-}
-#faq .carousel-indicators li:hover,
-#faq .carousel-indicators li:focus { border-color: #fff }
-#faq .carousel-indicators .active {
-  width: 9px;
-  height: 9px;
-  margin: 1px;
-  background-color: #71be3c;
-  border-color: #fff;
-}
-#faq .carousel-indicators {
-  bottom: 0;
-  margin-bottom: 0;
-}
 #faq .carousel-control {
   top: 15%;
   width: 0%;
