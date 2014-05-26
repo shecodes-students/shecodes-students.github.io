@@ -284,7 +284,7 @@ li {
 #contact .gittip:hover,
 #contact .gittip:focus { color: #A24EDE }
 #footer {
-  padding: 40px 0;
+  padding: 20px 0;
   color: #ccc;
   text-align: center;
   background-color: #2a3940;
@@ -292,7 +292,10 @@ li {
 #footer a,
 #footer a:hover,
 #footer a:focus { color: #fff }
-#footer .copyright { margin-bottom: 0 }
+#footer .copyright { 
+  margin-bottom: 0;
+  font-size: 0.8em; 
+}
 /* Responsive style */
 @media screen and (max-width: 1024px) { 
   #faq .carousel-control { display: block }
