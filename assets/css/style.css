@@ -360,7 +360,7 @@ li {
 }
 #mc_embed_signup {
   text-align: center;
-  margin: 3% auto;
+  margin: 1% auto;
   background: transparent;
   clear: left;
   font: 1em;
@@ -397,7 +397,7 @@ li {
   margin: 0 auto;
   text-align: center;
   width: 95%;
-  padding: 2% 0 8px 0;
+  padding: 1% 0 8px 0;
 }
 #mc_embed_signup label {
   display: inline-block;
@@ -408,7 +408,7 @@ li {
   margin-right: 10px;
 }
 .mc-field-group {
-  margin: 2% auto;
+  margin: 1% auto;
   width: 50%;
   min-width: 300px;
   display: block;
