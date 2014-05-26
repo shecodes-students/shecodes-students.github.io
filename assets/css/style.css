@@ -398,8 +398,8 @@ li {
   margin-right: 10px;
 }
 .mc-field-group {
-  margin: 3% auto;
-  width: 45%;
+  margin: 2% auto;
+  width: 50%;
   min-width: 300px;
-  display: inline-block;
+  display: block;
 }
