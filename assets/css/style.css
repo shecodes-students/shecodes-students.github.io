@@ -153,11 +153,12 @@ li {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 3.75em;
+  text-align: left;
 }
 #home a { margin: 0 5px }
 #home h3 {
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin: 20px 0;
+  text-align: left;
 }
 #project {
   color: #444;
