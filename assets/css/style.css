@@ -321,3 +321,81 @@ li {
   width: 72%;
   margin: 3% 14%;
 }
+/* Mail Chimp*/
+#mc_embed_signup input.email {
+  display:  inline-block;
+  padding: 6px 0;
+  margin: 0 3% 2% 0;
+  text-indent: 5px;
+  width: 40%;
+  min-width: 268px;
+  margin-left: 6px;
+  line-height: 1em;
+  border-radius: 5px;
+}
+#mc_embed_signup #mce-NAME {
+  display:  inline-block;
+  padding: 6px 0;
+  margin: 0 3% 2% 0;
+  text-indent: 5px;
+  width: 40%;
+  min-width: 268px;
+  margin-left: 6px;
+  line-height: 1em;
+  border-radius: 5px;
+}
+#mc_embed_signup {
+  text-align: center;
+  margin: 3% auto;
+  background: transparent;
+  clear: left;
+  font: 1em;
+  width: 99%;
+}
+#mc_embed_signup input.button {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  min-width: 150px;
+}
+#mc_embed_signup .button {
+  clear: both;
+  background-color: #A24EDE;
+  opacity: 0.8;
+  border: 0 none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  height: 34px;
+  line-height: 31px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#mc_embed_signup input {
+  border: 1px solid grey;
+  -webkit-appearance: none;
+}
+#mc_embed_signup form {
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+  padding: 2% 0 8px 0;
+}
+#mc_embed_signup label {
+  display: inline-block;
+  font-size: 1em;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+.mc-field-group {
+  margin: 3% auto;
+  width: 45%;
+  min-width: 300px;
+  display: inline-block;
+}
