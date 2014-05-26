@@ -369,8 +369,8 @@ li {
 #mc_embed_signup input.button {
   display: block;
   margin: 0 auto;
-  width: 150px;
-  min-width: 150px;
+  width: 200px;
+  min-width: 200px;
 }
 #mc_embed_signup .button {
   clear: both;
