@@ -151,13 +151,13 @@ li {
 }
 #home h1 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 3.75em;
   text-align: left;
 }
 #home a { margin: 0 5px }
 #home h3 {
-  margin: 20px 0;
+  margin: 10px 0 35px 0;
   text-align: left;
 }
 #project {
