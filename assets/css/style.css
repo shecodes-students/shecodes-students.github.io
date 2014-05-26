@@ -259,10 +259,7 @@ li {
   color: #00aced;
 }
 #contact {
-  background: url(../img/cover/contact.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: #2a3940;
 }
 #contact,
 #contact a,
