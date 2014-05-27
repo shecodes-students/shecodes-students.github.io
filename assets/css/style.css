@@ -160,6 +160,8 @@ li {
   margin: 0 0 35px 0;
   text-align: left;
 }
+#mission i { padding-top: 20px }
+#mission .content { padding-bottom: 100px }
 #project {
   color: #444;
   background-color: #fff;
@@ -205,8 +207,6 @@ li {
   background-image: none;
   text-shadow: none;
 }
-#mission .content { padding-bottom: 100px }
-#mission .item { margin-bottom: ; }
 #team .teammate { margin-top: 3% }
 #team .teammate .bio { padding-top: 10px }
 #team .teammate .bio .blurb { 
