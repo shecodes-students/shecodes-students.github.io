@@ -261,7 +261,9 @@ li {
   color: #00aced;
 }
 #contact {
-  background: #2a3940;
+  background-image: url(../img/cover/footer.png);
+  background-repeat: repeat;
+  background-position: center center;
 }
 #contact,
 #contact a,
@@ -282,7 +284,7 @@ li {
   padding: 20px 0;
   color: #ccc;
   text-align: center;
-  background-color: #1A282F;
+  background-color: #121212;
 }
 #footer a,
 #footer a:hover,
