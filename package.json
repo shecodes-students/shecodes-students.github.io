@@ -1,0 +1,22 @@
+{
+  "name": "www.she.codes",
+  "version": "0.0.1",
+  "description": "she.code's public web page",
+  "scripts": {
+    "make": "jade --pretty index.jade",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shecodes-students/shecodes-students.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shecodes-students/shecodes-students.github.io/issues"
+  },
+  "homepage": "http://she.codes",
+  "devDependencies": {
+    "jade": "^1.3.1"
+  }
+}
