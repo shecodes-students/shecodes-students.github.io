@@ -6,6 +6,13 @@ By: Hasan Alibegic, hasan461@gmail.com
 License: Apache License v2.0
 
 */
+
+/* hotfixing flattr button position*/
+iframe {
+  position:relative;
+  top:63px;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
