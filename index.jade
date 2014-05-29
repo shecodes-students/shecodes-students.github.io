@@ -15,6 +15,17 @@ html(lang='en-us')
     //if lt IE 9
       script(src='assets/js/html5shiv.js')
       script(src='assets/js/respond.min.js')
+    script.
+      (function() {
+          var s = document.createElement('script');
+          var t = document.getElementsByTagName('script')[0];
+
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
+
+          t.parentNode.insertBefore(s, t);
+      })();
   body
     .loader
       .fading-line
@@ -292,18 +303,7 @@ html(lang='en-us')
       
       ga('create','UA-51493039-1','she.codes');
       ga('send','pageview');
-    script.
-      (function() {
-          var s = document.createElement('script');
-          var t = document.getElementsByTagName('script')[0];
-
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
-
-          t.parentNode.insertBefore(s, t);
-      })();
-      
+    script.      
       $(function() {
         FlattrLoader.render({
             'uid': 'flattr',
