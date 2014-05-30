@@ -54,7 +54,7 @@ html(lang='en-us')
               li
                 a(href='#getinvolved') Get Involved
               li
-                a(href='#contact') Contact Us
+                a(href='#makeithappen') Make it Happen!
     section#mission.page
       .container
         .content.text-center
@@ -209,16 +209,18 @@ html(lang='en-us')
           // /row
         // /content text-center
       // /container
-    section#contact.page
+    section#makeithappen.page
       .container
         .content.text-center
           .heading
-            h2 Getting in Touch
+            h2 Make it Happen!
             .border
             p
           // Begin MailChimp Signup Form
           .row
-            #mailinglist.col-lg-12.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600', style="height:120px;")
+              #flattr_button
+            #mailinglist.col-lg-6.animated.hiding(data-animation='fadeInLeft', data-delay='600')
               #mc_embed_signup
                 form#mc-embedded-subscribe-form.validate(action='http://codes.us8.list-manage.com/subscribe/post?u=b9949874adc5510e04f273529&id=981f356d82', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
                   .mc-field-group
@@ -235,26 +237,27 @@ html(lang='en-us')
                     input#mc-embedded-subscribe.button(type='submit', value='Join our mailing list!', name='subscribe')
               // /mc_embed_signup
             // /mailinglist
-          // End mc_embed_signup
-          .row
-            .col-lg-2.animated.hiding(data-animation='fadeInLeft', data-delay='600')
-              a(href='mailto:she.codes.info@gmail.com')
-                i.fa.fa-envelope.fa-2x.email
-              a(href='mailto:she.codes.info@gmail.com') Email Us
-            .col-lg-2.animated.hiding(data-animation='fadeInLeft', data-delay='600', style="height:120px;")
-              #flattr_button
-            .col-lg-2.animated.hiding(data-animation='fadeInLeft', data-delay='600')
-              a(href='http://www.facebook.com/she.codes')
-                i.fa.fa-facebook.fa-2x.facebook
-              a(href='http://www.facebook.com/she.codes') Facebook
-            .col-lg-2.animated.hiding(data-animation='fadeInLeft', data-delay='600')
-              a(href='http://www.github.com/insertmode')
-                i.fa.fa-github.fa-2x.github
-              a(href='http://www.github.com/insertmode') GitHub
-            .col-lg-2.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600')
               a(href='http://www.gittip.com/insertmode')
                 i.fa.fa-gittip.fa-2x.gittip
               a(href='https://www.gittip.com/shecodes_') Gittip
+          .row
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+              a(href='mailto:she.codes.info@gmail.com')
+                i.fa.fa-envelope.fa-2x.email
+              a(href='mailto:she.codes.info@gmail.com') Email Us
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+              a(href='http://www.twitter.com/shecodes_')
+                i.fa.fa-twitter.fa-2x.twitter
+              a(href='https://www.twitter.com/shecodes_') Twitter
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+              a(href='http://www.github.com/insertmode')
+                i.fa.fa-github.fa-2x.github
+              a(href='http://www.github.com/insertmode') GitHub
+            .col-lg-3.animated.hiding(data-animation='fadeInLeft', data-delay='600')
+              a(href='http://www.facebook.com/she.codes')
+                i.fa.fa-facebook.fa-2x.facebook
+              a(href='http://www.facebook.com/she.codes') Facebook
     footer#footer
       .container
         .row
