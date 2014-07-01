@@ -280,15 +280,31 @@ li {
 #makeithappen a { display: block }
 #makeithappen i { margin: 60px 0 15px }
 #makeithappen .email:hover,
-#makeithappen .email:focus { color: #85E584 }
+#makeithappen .email:focus { color: #D54937 }
 #makeithappen .facebook:hover,
-#makeithappen .facebook:focus { color: #3b5998 }
+#makeithappen .facebook:focus { color: #44619D }
 #makeithappen .github:hover,
-#makeithappen .github:focus { color: #ea4c89  }
+#makeithappen .github:focus { color: #9CDAF1  }
 #makeithappen .gittip:hover,
-#makeithappen .gittip:focus { color: #A24EDE }
+#makeithappen .gittip:focus { color: #339966 }
 #makeithappen .twitter:hover,
 #makeithappen .twitter:focus { color: #55ACEE }
+#makeithappen .bitcoin:hover,
+#makeithappen .bitcoin:focus { color: #F7931A }
+#makeithappen .paypal:hover,
+#makeithappen .paypal:focus { color: #0079C1 }
+.paypal-icon {
+  text-align: center;
+  margin: 60px auto 0;
+  width: 55px;
+  height: 62px;
+  display: block;
+  background:transparent url('../img/paypal.png') center top no-repeat;
+}
+.paypal-icon:hover {
+  background-image: url('../img/paypalhover.png');
+}
+
 #footer {
   padding: 20px 0;
   color: #ccc;
