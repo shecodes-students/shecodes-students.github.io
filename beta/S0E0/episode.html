@@ -1,0 +1,78 @@
+<html>
+    <body>
+        <h1 id="hi-">Hi!</h1>
+<p>This is exciting! We are very happy to have you here. Thank you for being one of the very first beta testers of she.codes! We do appreciate your support a lot!
+Should you have any questions or get stuck, you can always reach us at <a href="mailto:beta@she.codes">beta@she.codes</a> or on Skype (Olena is <code>olena.levitsky</code> and Jan is <code>regularwork</code>).</p>
+<h2 id="like-seen-on-tv-">Like seen on TV!</h2>
+<p>The learning experience is partitioned like a TV show. There are <em>seasons</em>, and every season has <em>episodes</em>. You are currently looking at Season 0, Episode 0 (or S0E0 for short).
+This season is not part of what future students will see - it is exclusively for you beta testers.
+In this episode, we will get your personal journal set up, so that you will be able to write about your learning experience.</p>
+<h2 id="github">GitHub</h2>
+<p>Because we want to get you up-to-speed as fast as possible, we do not use blogging software or a CMS for the journal.
+Instead, we throw you right into the deep end! You will use the free web serivce <em>Github</em> for editing your text. This is the same web service you will use throughout
+the whole learning experience, and it is the same web service you will most likely use in your job later on.</p>
+<p>If you don&#39;t know what GitHub is, don&#39;t worry. You don&#39;t have to at all.</p>
+<h2 id="reading-lists">Reading Lists</h2>
+<p>Throughout the various episodes, we will send you out to external websites to pick up their free gems of wisdom.
+In each episode, we give you a list of links to visit, this list is called a <em>reading list</em>.</p>
+<h2 id="the-bookmarklet-is-with-you">The bookmarklet is with you</h2>
+<p>In the top, left corner of each reading list, you will find an indicator of the season and episode it belongs to (<code>S0E0</code> for this one).
+This thing is called the <em>id</em>, so this episode&#39;s id is S0E0. The id is a link, but it is a very special link - one you should not click!
+The id is linked to a little program called a <em>bookmarklet</em>. A bookmarklet is meant to be dragged into the browsers bookmark bar, which is usually below the input field for the address.
+(at least in Chrome it is.)
+So, go ahead and drag the S0E0 link of the reading list below into yur bookmark bar.
+There! You just installed the bookmarklet for this episode!</p>
+<h2 id="what-the-bookmarklet-does">What the bookmarklet does</h2>
+<p>Basically, whenever you are on an external website studying their content, you can bring back the reading list by clicking on the bookmarklet in the bookmark bar.
+Like the location indicator in a tram, it shows you where you come from, where you currently are, and where you go to next. More importantly,
+it will show you our annotations, comments and hints for the page you are currently looking at!
+That&#39;s why you should always make sure to click the bookmarklet after navigating to a new page on an external website - we might have some valuable comment for you!
+Simply make it a habit to click the bookmarklet whenever you do not see the reading list!</p>
+<h2 id="ready-">Ready?</h2>
+<p>Okay, so here is your first quest, your first reading list. Enjoy the ride!</p>
+<div class='reading_list'>
+
+        <a href="javascript:(function(){var READING_LIST_DATA={&quot;resources&quot;:[{&quot;title&quot;:&quot;Create your account on Github&quot;,&quot;entry&quot;:&quot;https://help.github.com/articles/signing-up-for-a-new-github-account&quot;,&quot;pages&quot;:[&quot;/.*\\/github.com\\/$/&quot;,&quot;/.*\\/github.com\\/join\\/plan/&quot;],&quot;description&quot;:&quot;It is your choice whether you want to be super-nerdy and use two-factor authentication or not.\n&quot;},{&quot;title&quot;:&quot;Create your first repository&quot;,&quot;entry&quot;:&quot;https://help.github.com/articles/create-a-repo&quot;,&quot;description&quot;:&quot;This repository will be a place for your personal notes, like a blog.\n&quot;,&quot;pages&quot;:[{&quot;url&quot;:&quot;/.*\\/github.com\\/new/&quot;,&quot;description&quot;:&quot;Call your new repository `my-notes-on-she.codes`.\n&quot;},{&quot;url&quot;:&quot;/.*\\/github.com\\/[^/]+/my-notes-on-she.codes/&quot;,&quot;description&quot;:&quot;In the Readme.md you can put something like &#39;This repository is for my personal she.codes stuff&#39;.\n**NOTE** All the world can see the contents of this repository. It is public.\n&quot;}]},{&quot;title&quot;:&quot;Learn all about the markdown syntax&quot;,&quot;entry&quot;:&quot;http://gitbookio.gitbooks.io/markdown/&quot;}]}/*/READING_LIST_DATA*/;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==&quot;function&quot;&amp;&amp;require;if(!u&amp;&amp;a)return a(o,!0);if(i)return i(o,!0);throw new Error(&quot;Cannot find module &#39;&quot;+o+&quot;&#39;&quot;)}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require==&quot;function&quot;&amp;&amp;require;for(var o=0;o&lt;r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){var render=require(&quot;./render&quot;),match=require(&quot;./match&quot;),styles=require(&quot;./bookmarklet.styl&quot;),insertCSS=require(&quot;insert-css&quot;),ctx=READING_LIST_DATA;ctx.link_target=&quot;_parent&quot;;var html=render(ctx);console.log(html);var container=document.createElement(&quot;iframe&quot;);container.setAttribute(&quot;style&quot;,&quot;top:0px;left:0px;z-index:30000;position:fixed;width:300px;height:100%;background-color:white;border: none;&quot;),document.body.appendChild(container),document.body.style.marginLeft=&quot;300px&quot;;var doc=container.contentDocument;doc.body.innerHTML=html,insertCSS(styles,{document:doc});var index=match(ctx,document.location.href);console.log(&quot;matching rl entry&quot;,index),-1!==index&amp;&amp;doc.getElementsByTagName(&quot;ul&quot;)[0].children[index].setAttribute(&quot;class&quot;,&quot;current&quot;);},{&quot;./bookmarklet.styl&quot;:2,&quot;./match&quot;:3,&quot;./render&quot;:6,&quot;insert-css&quot;:4}],2:[function(require,module,exports){module.exports=&#39;body{background-color:#ddd;font-family:helvetica;margin:0;padding:0}h1{font-size:1em;display:inline}a{text-decoration:none}a:visited{color:#999}ul.resource_list{background:linear-gradient(to right,transparent 0,transparent 1em,red 1em,red 2em,transparent 2em,transparent 100%);margin:2em 0 0;padding:0 0 0 1em;list-style:none}ul.resource_list li:before{content:&quot;+&quot;;color:#00f;font-size:1em}ul.resource_list li p.description,ul.resource_list li span.pages{display:none}ul.resource_list li.current{background-color:#fff}ul.resource_list li.current a,ul.resource_list li.current a:visited{color:initial}ul.resource_list li.current p.description,ul.resource_list li.current span.pages{display:block}&#39;;},{}],3:[function(require,module,exports){function isMatch(e,r){if(console.log(&quot;matching&quot;,r,&quot;against&quot;,e),&quot;/&quot;===e[0]&amp;&amp;&quot;/&quot;===e[e.length-1]){e=new RegExp(e.substr(1,e.length-2));var t=e.test(r);return t&amp;&amp;console.log(r,&quot;matches&quot;,e),t}return e==r}module.exports=function(e,r){for(var t=0;t&lt;e.resources.length;++t){var n=e.resources[t];if(n.pages&amp;&amp;n.pages.length)for(var s=0;s&lt;n.pages.length;++s){var a=n.pages[s];if(&quot;string&quot;==typeof a){if(isMatch(a,r))return t}else if(isMatch(a.url,r))return t}if(isMatch(n.entry,r))return t}return-1};},{}],4:[function(require,module,exports){var inserted = {};module.exports = function (css, options) {    if (inserted[css]) return;    inserted[css] = true;    var doc = options.document ||  document;        var elem = doc.createElement(&#39;style&#39;);    elem.setAttribute(&#39;type&#39;, &#39;text/css&#39;);    if (&#39;textContent&#39; in elem) {      elem.textContent = css;    } else {      elem.styleSheet.cssText = css;    }        var head = doc.getElementsByTagName(&#39;head&#39;)[0];    if (options &amp;&amp; options.prepend) {        head.insertBefore(elem, head.childNodes[0]);    } else {        head.appendChild(elem);    }};},{}],5:[function(require,module,exports){module.exports=function anonymous(locals,filters,escape,rethrow){escape=escape||function(e){return String(e).replace(/&amp;(?!#?[a-zA-Z0-9]+;)/g,&quot;&amp;amp;&quot;).replace(/&lt;/g,&quot;&amp;lt;&quot;).replace(/&gt;/g,&quot;&amp;gt;&quot;).replace(/&#39;/g,&quot;&amp;#39;&quot;).replace(/&quot;/g,&quot;&amp;quot;&quot;)};var buf=[];with(locals||{})!function(){buf.push(&quot;&lt;div class=&#39;reading_list&#39;&gt;\n    &quot;),&quot;undefined&quot;!=typeof bookmarklet&amp;&amp;buf.push(&#39;\n        &lt;a href=&quot;&#39;,escape(bookmarklet.replace(/\n/g,&quot;&quot;).replace(/\r/g,&quot;&quot;)),&#39;&quot;&gt;!! S01E01&lt;/a&gt;\n    &#39;),buf.push(&#39;\n    &lt;ul class=&quot;resource_list&quot;&gt;\n    &#39;),resources.forEach(function(e){buf.push(&#39;\n        &lt;li&gt;\n            &lt;a href=&quot;&#39;,escape(e.entry),&#39;&quot; target=&quot;&#39;,escape(&quot;undefined&quot;==typeof link_target?&quot;_self&quot;:link_target),&#39;&quot;&gt;&lt;h1&gt;&#39;,escape(e.title),&quot;&lt;/h1&gt;&lt;/a&gt;\n            &quot;),e.pages&amp;&amp;buf.push(&#39;\n                &lt;span class=&quot;pages&quot;&gt;(&#39;,escape(e.pages.length),&quot; pages)&lt;/span&gt;\n            &quot;),buf.push(&#39;\n            &lt;p class=&quot;description&quot;&gt;&#39;,escape(e.description),&quot;&lt;/p&gt;\n        &lt;/li&gt;\n    &quot;)}),buf.push(&quot;\n    &lt;/ul&gt;\n&lt;/div&gt;\n&quot;)}();return buf.join(&quot;&quot;)};},{}],6:[function(require,module,exports){var template=require(&quot;./reading_list.ejs&quot;);module.exports=function(e){return template(e)};},{&quot;./reading_list.ejs&quot;:5}]},{},[1])})();">!! S01E01</a>
+
+    <ul class="resource_list">
+
+        <li>
+            <a href="https://help.github.com/articles/signing-up-for-a-new-github-account" target="_self"><h1>Create your account on Github</h1></a>
+
+                <span class="pages">(2 pages)</span>
+
+            <p class="description">It is your choice whether you want to be super-nerdy and use two-factor authentication or not.
+</p>
+        </li>
+
+        <li>
+            <a href="https://help.github.com/articles/create-a-repo" target="_self"><h1>Create your first repository</h1></a>
+
+                <span class="pages">(2 pages)</span>
+
+            <p class="description">This repository will be a place for your personal notes, like a blog.
+</p>
+        </li>
+
+        <li>
+            <a href="http://gitbookio.gitbooks.io/markdown/" target="_self"><h1>Learn all about the markdown syntax</h1></a>
+
+            <p class="description">undefined</p>
+        </li>
+
+    </ul>
+</div>
+
+
+
+<h2 id="dear-diary">Dear Diary</h2>
+<p>Knowing how you feel while studying the material we
+show to you is very important to us. Please write down all the little confusions, misunderstandings, or even frustrations you might encounter, but do not leave out the fun and exciting moments as well!</p>
+<p>Should you encounter terms that you do not understand, we leave it to your judgement whether you use Wikipedia, Google or anything else to search for the definition or explanation. If you find something that helped you, please take a note of the url in your journal.
+If English is not your first language, and you struggle with certain words, please consult an online dictionary and take a note of it. We want she.codes to work for as many women as possible, so it is important to us that the language is as accessible as possible.</p>
+<p>If you get stuck and contact us, please also write about this incident in your journal.</p>
+<p>So, it probably makes sense to keep your journal open at all times in a dedicated tab or window of your browser.</p>
+
+    </body>
+</html>
+
