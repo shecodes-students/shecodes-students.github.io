@@ -214,19 +214,23 @@ li {
   background-image: none;
   text-shadow: none;
 }
-#team .teammate { margin-top: 3% }
-#team .teammate .bio { padding-top: 10px }
-#team .teammate .bio .blurb { 
+#team .teammate, #volunteers .teammate { margin-top: 3% }
+#volunteers .volunteer-blurb {
+  margin-bottom: 2%;
+}
+#team .teammate .bio, #volunteers .teammate .bio { padding-top: 10px }
+#team .teammate .bio .blurb, #volunteers .teammate .bio .blurb { 
   text-align: left;
   margin: 1em 10px; 
 }
-#team .teammate .photo-rounded {
+#team .teammate .photo-rounded, #volunteers .teammate .photo-rounded {
   overflow: hidden;
   -webkit-border-radius: 8px;
      -moz-border-radius: 8px;
           border-radius: 8px;
 }     
-#team .teammate .photo-rounded img {
+#team .teammate .photo-rounded img, 
+#volunteers .teammate .photo-rounded img {
   margin: 5%;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -238,32 +242,48 @@ li {
           transition: all .4s ease;
 }
 #team .teammate:hover .photo-rounded img,
-#team .teammate:focus .photo-rounded img {
+#team .teammate:focus .photo-rounded img, 
+#volunteers .teammate:hover .photo-rounded img,
+#volunteers .teammate:focus .photo-rounded img {
   -webkit-transform: scale(1.1);
      -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
        -o-transform: scale(1.1);
           transform: scale(1.1);
 }
-#team .teammate .bio .border {
+#team .teammate .bio .border,
+#volunteers .teammate .bio .border {
   height: 1px;
   margin: 15px auto;
 }
-#team .teammate .bio ul {
+#team .teammate .bio ul, 
+#volunteers .teammate .bio ul {
   margin-bottom: 0;
   font-size: 1em;
 }
-#team .teammate .bio a { color: #666 }
+#team .teammate .bio a,
+#volunteers .teammate .bio a {
+  color: #666;
+}
 #team .teammate .bio a:hover,
-#team .teammate .bio a:focus { color: #222 }
-#team .twitter {
+#team .teammate .bio a:focus,
+#volunteers .teammate .bio a:hover,
+#volunteers .teammate .bio a:focus {
+  color: #222;
+}
+#team .twitter,
+#volunteers .twitter {
   padding: 20px 0;
   margin-top: 60px;
   background-color: #f5f5f5;
   border-top: solid 1px #e7e7e7;
 }
-#team .twitter p { margin-bottom: 0 }
-#team .twitter i {
+#team .twitter p,
+#volunteers .twitter p { 
+  margin-bottom: 0;
+}
+#team .twitter i,
+#volunteers .twitter i {
   margin-bottom: 10px;
   color: #00aced;
 }
